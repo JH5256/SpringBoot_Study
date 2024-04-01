@@ -21,6 +21,7 @@ public class ExceptionHandlerController {
     public String nullPointerExceptionHandler(NullPointerException exception){
 
         System.out.println("message : " + exception.getMessage());
+        System.out.println("controller(지역) 레벨의 exception 처리");
 
         return "error/nullPointer";
     }
@@ -41,6 +42,9 @@ public class ExceptionHandlerController {
     public String userExceptionHandler(MemberRegistException exception, Model model) {
 
         model.addAttribute("exception", exception);
+        System.out.println("controller(지역) 레벨의 exception 처리");
+
+
 
         return "error/memberRegist";
     }
