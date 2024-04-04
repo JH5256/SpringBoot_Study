@@ -55,6 +55,15 @@ public class MenuController {
     @PostMapping("/regist")
     public String registMenu(@ModelAttribute MenuDTO menu, RedirectAttributes rttr, Locale locale) {
 
+        /* 로그 레벨 테스트 */
+        logger.trace("menu : {}", menu);
+        logger.debug("menu : {}", menu);
+        logger.info("menu : {}", menu);
+        logger.warn("menu : {}", menu);
+        logger.error("menu : {}", menu);
+
+
+
         menuService.registMenu(menu);
 
         rttr.addFlashAttribute("successMessage", messageSource.getMessage("registMenu", null, locale));

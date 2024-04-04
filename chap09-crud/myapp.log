@@ -1,0 +1,25 @@
+2024-04-04T14:42:53.958+09:00  INFO 10460 --- [restartedMain] c.o.crud.configuration.Application       : Starting Application using Java 17.0.10 with PID 10460 (C:\dev\lecture\spring-boot\chap09-crud\build\classes\java\main started by hi in C:\dev\lecture\spring-boot\chap09-crud)
+2024-04-04T14:42:53.960+09:00  INFO 10460 --- [restartedMain] c.o.crud.configuration.Application       : No active profile set, falling back to 1 default profile: "default"
+2024-04-04T14:42:53.994+09:00  INFO 10460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-04-04T14:42:53.994+09:00  INFO 10460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-04-04T14:42:54.789+09:00  INFO 10460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-04-04T14:42:54.797+09:00  INFO 10460 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-04-04T14:42:54.798+09:00  INFO 10460 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-04-04T14:42:54.836+09:00  INFO 10460 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-04-04T14:42:54.837+09:00  INFO 10460 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 840 ms
+2024-04-04T14:42:55.067+09:00  INFO 10460 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-04-04T14:42:55.273+09:00  INFO 10460 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-04-04T14:42:55.297+09:00  INFO 10460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-04-04T14:42:55.307+09:00  INFO 10460 --- [restartedMain] c.o.crud.configuration.Application       : Started Application in 1.673 seconds (process running for 2.059)
+2024-04-04T14:43:05.547+09:00  INFO 10460 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-04T14:43:05.547+09:00  INFO 10460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-04-04T14:43:05.548+09:00  INFO 10460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-04-04T14:43:06.858+09:00  WARN 10460 --- [http-nio-8080-exec-2] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-2][menu/regist] Deprecated unwrapped fragment expression "common/header.html" found in template menu/regist, line 8, col 10. Please use the complete syntax of fragment expressions instead ("~{common/header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2024-04-04T14:43:06.875+09:00  INFO 10460 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-04-04T14:43:07.080+09:00  INFO 10460 --- [http-nio-8080-exec-3] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44fc0f88
+2024-04-04T14:43:07.082+09:00  INFO 10460 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-04-04T14:43:18.811+09:00  INFO 10460 --- [http-nio-8080-exec-4] c.o.crud.menu.controller.MenuController  : menu : MenuDTO{menuCode=0, menuName='바나나', menuPrice=3000, categoryCode=10, orderableStatus='Y'}
+2024-04-04T14:43:18.813+09:00  WARN 10460 --- [http-nio-8080-exec-4] c.o.crud.menu.controller.MenuController  : menu : MenuDTO{menuCode=0, menuName='바나나', menuPrice=3000, categoryCode=10, orderableStatus='Y'}
+2024-04-04T14:43:18.813+09:00 ERROR 10460 --- [http-nio-8080-exec-4] c.o.crud.menu.controller.MenuController  : menu : MenuDTO{menuCode=0, menuName='바나나', menuPrice=3000, categoryCode=10, orderableStatus='Y'}
+2024-04-04T14:43:18.891+09:00  WARN 10460 --- [http-nio-8080-exec-5] o.t.s.p.StandardIncludeTagProcessor      : [THYMELEAF][http-nio-8080-exec-5][menu/list] Deprecated attribute {th:include,data-th-include} found in template menu/list, line 12, col 10. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+2024-04-04T14:43:18.891+09:00  WARN 10460 --- [http-nio-8080-exec-5] actStandardFragmentInsertionTagProcessor : [THYMELEAF][http-nio-8080-exec-5][menu/list] Deprecated unwrapped fragment expression "common/header.html" found in template menu/list, line 12, col 10. Please use the complete syntax of fragment expressions instead ("~{common/header.html}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
